@@ -1,0 +1,20 @@
+//用户订单类
+export type UserRegister={
+    id:number;
+    doctor:any;//医生对象
+    patient:any;//就诊卡对象
+    user:any;//就诊卡对象
+    patient_name:string;//就诊人的名字
+    phone:string;//就诊人的号码
+    describe:string;//订单的病情描述
+    id_number:string;//就诊人的身份证号码
+    work_time:string;//就诊人的挂号的时间
+    status:number;//就诊人的挂号的时间的具体2=上午还是3=下午
+    pay_money:number;//支付的金额
+    pay_time:string;//支付的时间
+    WeChatNumber:string;//微信订单号
+    SystemNumber:string;//系统订单号
+    create_time:string;//订单的创建时间
+    update_time:string;//订单的修改时间
+    order_status:number;//订单状态(0=待支付，1=已支付，2=支付失败，3=已退款)
+}
